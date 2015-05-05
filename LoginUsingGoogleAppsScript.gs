@@ -1,5 +1,7 @@
 /*
-This is a sample Google Apps Script for logging into a WSO2 Identity Server Protected Resource. It retrieves the SAML Assertions from the WSO2 Identity Server and then uses the SAML Response to make HTTP GET/POST requests.
+This is a sample Google Apps Script for logging into a WSO2 Identity Server Protected Resource. 
+It retrieves the SAML Assertions from the WSO2 Identity Server and then uses the SAML Response 
+to make HTTP GET/POST requests.
 
 */
 function WSO2SAMLLogin() {
