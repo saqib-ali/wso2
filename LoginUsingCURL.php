@@ -1,5 +1,5 @@
 /*
-This is a sample PHP Script for logging into a WSO2 Identity Server Protected Resource. 
+This is a sample PHP cURL Script for logging into a WSO2 Identity Server Protected Resource. 
 It retrieves the SAML Assertions from the WSO2 Identity Server and then uses the SAML Response 
 to make HTTP GET/POST requests.
 */
