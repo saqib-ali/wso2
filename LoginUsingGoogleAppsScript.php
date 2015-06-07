@@ -1,3 +1,10 @@
+/*
+This is a sample PHP Script for logging into a WSO2 Identity Server Protected Resource. 
+It retrieves the SAML Assertions from the WSO2 Identity Server and then uses the SAML Response 
+to make HTTP GET/POST requests.
+*/
+
+
 <?php
 
 unlink("/tmp/cookies.txt");
@@ -41,7 +48,7 @@ $RelayState = urlencode($RelayState);
 $POSTVARS = "username={$USERNAME}&password=$PASSWORD&sessionDataKey=$sessionDataKey";
 
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, $WSO2_IS_URL);
+curl_setopt($curl, CURLOPT_URL, $WSO2_IS_URL); // Retrieve the SAML Token from the WSO2 Identity Server
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($curl, CURLOPT_POST, 1);
